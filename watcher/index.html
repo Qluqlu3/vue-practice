@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watcher</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h2>{{ message }}</h2>
+      <input type="text" v-model="message" />
+      <div style="height: 50px"></div>
+      <div><input type="number" v-model="km" />km</div>
+      <div><input type="number" v-model="m" />m</div>
+
+      <div><input type="text" v-model="firstName" /></div>
+      <div><input type="text" v-model="lastName" /></div>
+      <div>fullName: {{ fullName }}</div>
+
+      <ul>
+        <li v-for="color in colors">{{ color.name }}</li>
+      </ul>
+      <button v-on:click="onClick">Click</button>
+    </div>
+    <script src="https://unpkg.com/vue@3.1.5"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

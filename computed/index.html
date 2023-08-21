@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h2>{{ reversedMessage }}</h2>
+      <h2>{{ reversedMessageMethod() }}</h2>
+
+      <h2>base price</h2>
+      <input type="number" name="" id="" v-model="basePrice" />
+
+      <h2>tax included price</h2>
+      <input type="number" name="" id="" v-model="taxIncludedPrice" />
+
+      <h2>computed</h2>
+      <ol>
+        <li>{{ computedNumber }}</li>
+        <li>{{ computedNumber }}</li>
+        <li>{{ computedNumber }}</li>
+      </ol>
+
+      <h2>method</h2>
+      <ol>
+        <li>{{ methodNumber() }}</li>
+        <li>{{ methodNumber() }}</li>
+        <li>{{ methodNumber() }}</li>
+      </ol>
+    </div>
+    <script src="https://unpkg.com/vue@3.1.5"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

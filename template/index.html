@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h2 v-once>{{ message }}</h2>
+      <button v-on:click="clickHandler">CLICK</button>
+
+      <h2 v-pre>{{ text }}</h2>
+
+      <h2>{{ html }}</h2>
+      <h2 v-html="html"></h2>
+
+      <h2 v-cloak>{{ cloakText }}</h2>
+
+      <h2 v-text="text"></h2>
+
+      <h2>{{ text.split('').reverse().join('') }}</h2>
+      <h2>{{ number + 10 }}</h2>
+      <h2>{{ isOK ? 'YES': 'NO'}}</h2>
+
+      <a :href="url">URL</a>
+    </div>
+    <script src="https://unpkg.com/vue@3.1.5"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
